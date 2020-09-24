@@ -1,19 +1,21 @@
 import React, { Component } from "react";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 export class Search extends Component {
   state = {
     text: "",
   };
 
   static propTypes = {
-    searchUsers : PropTypes.func.isRequired
-  }
+    searchUsers: PropTypes.func.isRequired,
+    clearUsers: PropTypes.func.isRequired,
+    showClear: PropTypes.bool.isRequired,
+  };
 
   onSubmit = (e) => {
     e.preventDefault();
     this.props.searchUsers(this.state.text);
     this.setState({ text: "" });
-    console.log(this.state.text)//check in console form working
+    console.log(this.state.text); //check in console form working
   };
 
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
@@ -36,10 +38,17 @@ export class Search extends Component {
             className="btn btn-dark btn-block"
           />
         </form>
+        {this.props.showClear && (
+          <button
+            className="btn btn-light btn-block"
+            onClick={this.props.clearUsers}
+          >
+            Clear
+          </button>
+        )}
       </div>
     );
   }
 }
-
 
 export default Search;
