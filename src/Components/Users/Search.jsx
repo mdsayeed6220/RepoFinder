@@ -1,20 +1,27 @@
 import React, { Component } from "react";
-
+import PropTypes from 'prop-types'
 export class Search extends Component {
   state = {
     text: "",
   };
 
-  onChange = (e) => {
-    this.setState({ text: e.target.value });
-    console.log(this.state.text); //verify form working or not
-    };
-    
+  static propTypes = {
+    searchUsers : PropTypes.func.isRequired
+  }
+
+  onSubmit = (e) => {
+    e.preventDefault();
+    this.props.searchUsers(this.state.text);
+    this.setState({ text: "" });
+    console.log(this.state.text)//check in console form working
+  };
+
+  onChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
   render() {
     return (
       <div>
-        <form className="form">
+        <form onSubmit={this.onSubmit} className="form">
           <input
             type="text"
             name="text"
@@ -25,7 +32,7 @@ export class Search extends Component {
 
           <input
             type="submit"
-            value="Saerch"
+            value="Search"
             className="btn btn-dark btn-block"
           />
         </form>
@@ -33,5 +40,6 @@ export class Search extends Component {
     );
   }
 }
+
 
 export default Search;
