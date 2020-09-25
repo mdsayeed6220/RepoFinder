@@ -11,7 +11,7 @@ const Navbar = ({ icon, title }) => {
 };
 Navbar.defaultProps = {
   title: "Repo Finder",
-  icon: "fab fa-github",
+  icon: "fab fa-github fa-spin",
 };
 // should give string type
 Navbar.propTypes = {
