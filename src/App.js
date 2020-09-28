@@ -29,15 +29,17 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        
         <Navbar></Navbar>
-        <Search
-          searchUsers={this.searchUsers}
-          clearUsers={this.clearUsers}
-          showClear={this.state.users.length > 0 ? true : false}
-          setAlert={this.setAlert}
-        ></Search>
-        <Users loading={this.state.loading} users={this.state.users}></Users>
+        <div className="container">
+          <Alert alert={this.state.alert}></Alert>
+          <Search
+            searchUsers={this.searchUsers}
+            clearUsers={this.clearUsers}
+            showClear={this.state.users.length > 0 ? true : false}
+            setAlert={this.setAlert}
+          ></Search>
+          <Users loading={this.state.loading} users={this.state.users}></Users>
+        </div>
       </div>
     );
   }
