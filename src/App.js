@@ -1,10 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Components/Layout/Navbar";
 import axios from "axios";
 import "./App.css";
 import Users from "./Components/Users/Users";
 import Search from "./Components/Users/Search";
 import Alert from "./Components/Layout/Alert";
+import About from "./Components/Pages/about";
 class App extends React.Component {
   state = {
     users: [],
@@ -24,23 +26,43 @@ class App extends React.Component {
 
   setAlert = (msg, type) => {
     this.setState({ alert: { msg, type } });
+    setTimeout(() => {
+      this.setState({ alert: null });
+    }, 3000);
   };
 
   render() {
     return (
-      <div className="App">
-        <Navbar></Navbar>
-        <div className="container">
-          <Alert alert={this.state.alert}></Alert>
-          <Search
-            searchUsers={this.searchUsers}
-            clearUsers={this.clearUsers}
-            showClear={this.state.users.length > 0 ? true : false}
-            setAlert={this.setAlert}
-          ></Search>
-          <Users loading={this.state.loading} users={this.state.users}></Users>
+      <Router>
+        <div className="App">
+          <Navbar></Navbar>
+          <div className="container">
+            <Alert alert={this.state.alert}></Alert>
+            <Switch>
+              <Route
+                exact
+                path="/"
+                render={(props) => (
+                  <Fragment>
+                    <Search
+                      searchUsers={this.searchUsers}
+                      clearUsers={this.clearUsers}
+                      showClear={this.state.users.length > 0 ? true : false}
+                      setAlert={this.setAlert}
+                    ></Search>
+                  </Fragment>
+                )}
+              ></Route>
+              <Route exact path="/about" component={About}></Route>
+            </Switch>
+
+            <Users
+              loading={this.state.loading}
+              users={this.state.users}
+            ></Users>
+          </div>
         </div>
-      </div>
+      </Router>
     );
   }
 }

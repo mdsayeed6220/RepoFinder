@@ -8,7 +8,7 @@ const Spinner = () => {
         alt="Loading...."
         style={{
           width: "100px",
-          top: "50%",
+          top: "60%",
           position: "absolute",
           left: "45%",
         }}
