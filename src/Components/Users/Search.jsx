@@ -37,7 +37,6 @@ export class Search extends Component {
             value={this.state.text}
             onChange={this.onChange}
           />
-
           <input
             type="submit"
             value="Search"

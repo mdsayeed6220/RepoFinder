@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
+import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Components/Layout/Navbar";
 import axios from "axios";
-import "./App.css";
 import Users from "./Components/Users/Users";
 import Search from "./Components/Users/Search";
 import User from "./Components/Users/User";
@@ -81,7 +81,7 @@ class App extends React.Component {
                     getUser={this.getUser}
                     getUserRepos={this.getUserRepos}
                     user={user}
-                    repos={this.state.repos} 
+                    repos={this.state.repos}
                     loading={this.state.loading}
                   ></User>
                 )}

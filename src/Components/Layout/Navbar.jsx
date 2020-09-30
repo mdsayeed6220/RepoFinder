@@ -9,6 +9,12 @@ const Navbar = ({ icon, title }) => {
           <i className={icon}></i> {title}
         </h1>
         <ul>
+        <li>
+            <Link to="/">
+              {" "}
+              <i className="fas fa-code"></i> Jobs
+            </Link>
+          </li>
           <li>
             <Link to="/">
               {" "}
@@ -26,6 +32,7 @@ const Navbar = ({ icon, title }) => {
               <i className="fas fa-user"></i> Contact
             </a>
           </li>
+          
         </ul>
       </nav>
     </div>
