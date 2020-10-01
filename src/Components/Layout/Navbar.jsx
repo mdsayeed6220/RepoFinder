@@ -10,7 +10,7 @@ const Navbar = ({ icon, title }) => {
         </h1>
         <ul>
           <li>
-            <Link to="/">
+            <Link to="/jobs">
               {" "}
               <i className="fas fa-code"></i> Jobs
             </Link>

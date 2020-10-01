@@ -8,6 +8,7 @@ import Search from "./Components/Users/Search";
 import User from "./Components/Users/User";
 import Alert from "./Components/Layout/Alert";
 import About from "./Components/Pages/about";
+import Jobs from "./Components/Jobs/Jobs";
 class App extends React.Component {
   state = {
     users: [],
@@ -86,6 +87,7 @@ class App extends React.Component {
                   ></User>
                 )}
               ></Route>
+              <Route exact path="/jobs" component={Jobs}></Route>
             </Switch>
 
             <Users
