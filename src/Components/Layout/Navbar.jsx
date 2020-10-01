@@ -9,7 +9,7 @@ const Navbar = ({ icon, title }) => {
           <i className={icon}></i> {title}
         </h1>
         <ul>
-        <li>
+          <li>
             <Link to="/">
               {" "}
               <i className="fas fa-code"></i> Jobs
@@ -32,7 +32,6 @@ const Navbar = ({ icon, title }) => {
               <i className="fas fa-user"></i> Contact
             </a>
           </li>
-          
         </ul>
       </nav>
     </div>

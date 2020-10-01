@@ -31,7 +31,7 @@ class User extends Component {
       public_gists,
       hireable,
     } = this.props.user;
-    const {repos, loading } = this.props;
+    const { repos, loading } = this.props;
     if (loading) return <Spinner></Spinner>;
 
     return (
@@ -64,7 +64,7 @@ class User extends Component {
               </Fragment>
             )}
             <a href={html_url} className="btn btn-dark my-1">
-              Visit Github Profile
+              <i className="fas fa-user"></i>  Visit Github Profile
             </a>
             <ul>
               <li>
@@ -97,10 +97,12 @@ class User extends Component {
         <div className="card text-center">
           <div className="badge badge-primary">Followers : {followers}</div>
           <div className="badge badge-success">Following : {following}</div>
-          <div className="badge badge-light">Public Repos : {public_repos}</div>
+          <div className="badge badge-danger">
+            Public Repos : {public_repos}
+          </div>
           <div className="badge badge-dark">Public Gists : {public_gists}</div>
         </div>
-        <Repos repos={repos} ></Repos>
+        <Repos repos={repos}></Repos>
       </Fragment>
     );
   }
