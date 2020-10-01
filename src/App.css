@@ -10,6 +10,7 @@
 }
 
 * {
+  
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -19,7 +20,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: #fffdfd;
   color: #333;
 }
 
@@ -46,6 +47,7 @@ img {
   margin: auto;
   overflow: hidden;
   padding: 0 2rem;
+  
 }
 
 /* Text Styles*/
@@ -112,8 +114,17 @@ img {
 /* Cards */
 .card {
   padding: 1rem;
-  border: #ccc 1px dotted;
+  border: rgb(254, 255, 255) 2px solid ;
+  background-color:white;
+  border-radius: 1%;
   margin: 0.7rem 0;
+  box-shadow: 7px 7px 12px 3px rgba(165, 165, 165, 0.56);
+  
+}
+.card:hover{
+  background-color:white;
+  box-shadow: 7px 7px 12px 3px rgb(180, 180, 180);
+  cursor: pointer;
 }
 
 /* List */
@@ -200,9 +211,11 @@ img {
   display: inline-block;
   background: var(--light-color);
   color: #333;
-  padding: 0.4rem 1.3rem;
+  padding: 0.4rem 1rem;
+
   font-size: 1rem;
-  border: none;
+  border: 15px;
+  border-radius: 1%;
   cursor: pointer;
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
