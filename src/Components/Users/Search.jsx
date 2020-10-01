@@ -33,7 +33,7 @@ export class Search extends Component {
           <input
             type="text"
             name="text"
-            placeholder="Search Users,Repo..."
+            placeholder="Search Github Users...."
             value={this.state.text}
             onChange={this.onChange}
           />
@@ -44,7 +44,7 @@ export class Search extends Component {
           />
         </form>
         {showClear && (
-          <button className="btn btn-light btn-block" onClick={clearUsers}>
+          <button className="btn btn-danger btn-block" onClick={clearUsers}>
             Clear
           </button>
         )}

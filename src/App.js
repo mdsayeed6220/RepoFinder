@@ -9,6 +9,7 @@ import User from "./Components/Users/User";
 import Alert from "./Components/Layout/Alert";
 import About from "./Components/Pages/about";
 import Jobs from "./Components/Jobs/Jobs";
+import contact from "./Components/Contact/contact";
 class App extends React.Component {
   state = {
     users: [],
@@ -47,7 +48,7 @@ class App extends React.Component {
     this.setState({ alert: { msg, type } });
     setTimeout(() => {
       this.setState({ alert: null });
-    }, 3000);
+    }, 2000);
   };
   render() {
     const { user } = this.state;
@@ -88,6 +89,7 @@ class App extends React.Component {
                 )}
               ></Route>
               <Route exact path="/jobs" component={Jobs}></Route>
+              <Route exact path="/contact" component={contact}></Route>
             </Switch>
 
             <Users

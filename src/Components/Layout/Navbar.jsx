@@ -10,15 +10,15 @@ const Navbar = ({ icon, title }) => {
         </h1>
         <ul>
           <li>
-            <Link to="/jobs">
+            <Link to="/">
               {" "}
-              <i className="fas fa-code"></i> Jobs
+              <i className="fas fa-search"></i> Search
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/jobs">
               {" "}
-              <i className="fas fa-home"></i> Home
+              <i className="fas fa-code"></i> Jobs
             </Link>
           </li>
           <li>
@@ -28,9 +28,9 @@ const Navbar = ({ icon, title }) => {
             </Link>
           </li>
           <li>
-            <a href="/contact">
+            <Link to="/contact">
               <i className="fas fa-user"></i> Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -38,8 +38,8 @@ const Navbar = ({ icon, title }) => {
   );
 };
 Navbar.defaultProps = {
-  title: "Repo Finder",
-  icon: "fab fa-github fa-spin",
+  title: "Geek Hub",
+  icon: "fab fa-github  fa-spin",
 };
 // should give string type
 Navbar.propTypes = {

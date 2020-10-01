@@ -370,7 +370,8 @@ table th {
 
 .navbar a:hover {
   color: black;
-  background-color: rgb(48, 183, 236);
+  background-color:#068bf8;
+  
 }
 
 .navbar .welcome span {
