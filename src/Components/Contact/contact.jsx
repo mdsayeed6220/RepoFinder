@@ -1,8 +1,10 @@
 import React from "react";
 import "./Style.css";
+
 const contact = () => {
   return (
     <div>
+      <h1 style={{textAlign:"center"}} >Contact Through Below</h1>
       <div className="middle">
         <a
           className="buttonContact"

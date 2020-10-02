@@ -20,7 +20,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fffdfd;
+  background-color: #ffffff;
   color: #333;
 }
 
@@ -118,12 +118,12 @@ img {
   background-color:white;
   border-radius: 1%;
   margin: 0.7rem 0;
-  box-shadow: 7px 7px 12px 3px rgba(165, 165, 165, 0.56);
+  box-shadow: 7px 7px 12px -3px rgba(77, 77, 77, 0.56);
   
 }
 .card:hover{
   background-color:white;
-  box-shadow: 7px 7px 12px 3px rgb(180, 180, 180);
+  box-shadow: 7px 7px 12px 5px rgb(165, 165, 165);
   cursor: pointer;
 }
 
