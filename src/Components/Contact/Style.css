@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  
+
   background-repeat: no-repeat;
   background-size: 1920px 1080px;
 }
@@ -10,29 +10,17 @@ body {
   text-emphasis: centre;
 }
 
-.myimg {
-  margin: 0px;
-  border-radius: 50%;
-  border-color: burlywood;
-  width: 250px;
-  height: 250px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 300px;
-}
 .middle {
   position: absolute;
-  top: 70%;
+  top: 80%;
   transform: translateY(-50%);
   width: auto;
   text-align: center;
 }
 .buttonContact {
-   
   display: inline-block;
-  width: 190px;
-  height: 190px;
+  width: 160px;
+  height: 165px;
   background: #f1f1f1;
   margin: 20px;
   border-radius: 50%;
@@ -42,7 +30,7 @@ body {
   position: relative;
 }
 .buttonContact i {
-  line-height: 200px;
+  line-height: 175px;
   font-size: 100px;
   transition: 0.2s linear;
 }

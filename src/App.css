@@ -30,7 +30,7 @@ a {
 }
 
 a:hover {
-  color: #666666;
+  color: #8d8d8d;
 }
 
 ul {
@@ -118,12 +118,13 @@ img {
   background-color:white;
   border-radius: 1%;
   margin: 0.7rem 0;
-  box-shadow: 7px 7px 12px -3px rgba(77, 77, 77, 0.56);
+  box-shadow: 7px 7px 12px -7px rgba(77, 77, 77, 0.56);
   
 }
 .card:hover{
   background-color:white;
-  box-shadow: 7px 7px 12px 5px rgb(165, 165, 165);
+  box-shadow: 7px 7px 12px 7px rgb(209, 209, 209);
+  padding: 2rem ;
   cursor: pointer;
 }
 

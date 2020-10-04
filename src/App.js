@@ -9,7 +9,7 @@ import User from "./Components/Users/User";
 import Alert from "./Components/Layout/Alert";
 import About from "./Components/Pages/about";
 import contact from "./Components/Contact/contact";
-
+import Jobs from "./Components/Jobs/Jobs";
 
 class App extends React.Component {
   state = {
@@ -26,7 +26,6 @@ class App extends React.Component {
       `https://api.github.com/search/users?q=${text}&client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
     );
     this.setState({ users: res.data.items, loading: false });
-    
   };
   getUser = async (username) => {
     this.setState({ loading: true });
@@ -58,6 +57,7 @@ class App extends React.Component {
       <Router>
         <div className="App">
           <Navbar></Navbar>
+          <contact></contact>
           <div className="container">
             <Alert alert={this.state.alert}></Alert>
             <Switch>
@@ -90,7 +90,7 @@ class App extends React.Component {
                   ></User>
                 )}
               ></Route>
-              <Route exact path="/jobs" component={contact}></Route>
+              <Route exact path="/jobs" component={Jobs}></Route>
               <Route exact path="/contact" component={contact}></Route>
             </Switch>
 

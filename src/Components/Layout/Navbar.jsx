@@ -1,10 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import contact from '../Contact/contact'
 const Navbar = ({ icon, title }) => {
   return (
     <div>
+      <contact></contact>
       <nav className="navbar bg-primary">
+        
         <h1>
           <i className={icon}></i> {title}
         </h1>
