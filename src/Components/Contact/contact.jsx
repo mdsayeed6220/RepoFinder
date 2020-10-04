@@ -31,6 +31,7 @@ const contact = () => {
           <i className="fab fa-linkedin-in"></i>
         </a>
       </div>
+      <p> </p>
       <div className="box">
         <div></div>
         <div></div>

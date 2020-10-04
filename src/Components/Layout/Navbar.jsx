@@ -21,7 +21,7 @@ const Navbar = ({ icon, title }) => {
           <li>
             <Link to="/jobs">
               {" "}
-              <i className="fas fa-code"></i> Jobs
+              <i className="fas fa-code"></i>  Find Jobs
             </Link>
           </li>
           <li>
@@ -41,7 +41,7 @@ const Navbar = ({ icon, title }) => {
   );
 };
 Navbar.defaultProps = {
-  title: "Geek Hub",
+  title: "Geek 💡 Hub",
   icon: "fab fa-github  fa-spin",
 };
 // should give string type
