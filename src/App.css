@@ -10,7 +10,6 @@
 }
 
 * {
-  
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -47,7 +46,6 @@ img {
   margin: auto;
   overflow: hidden;
   padding: 0 2rem;
-  
 }
 
 /* Text Styles*/
@@ -114,18 +112,15 @@ img {
 /* Cards */
 .card {
   padding: 1rem;
-  border: rgb(254, 255, 255) 2px solid ;
-  background-color:white;
+  border: rgb(254, 255, 255) 2px solid;
+  background-color: white;
   border-radius: 1%;
   margin: 0.7rem 0;
   box-shadow: -18px 7px 18px -7px rgba(77, 77, 77, 0.56);
-  
 }
-.card:hover{
-  background-color:white;
+.card:hover {
+  background-color: white;
   box-shadow: -7px 7px 12px -7px rgb(209, 209, 209);
-  
-  padding: 1rem ;
   cursor: pointer;
 }
 
@@ -385,8 +380,7 @@ table th {
 
 .navbar a:hover {
   color: black;
-  background-color:#068bf8;
-  
+  background-color: #068bf8;
 }
 
 .navbar .welcome span {

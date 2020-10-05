@@ -19,7 +19,7 @@ class App extends React.Component {
     alert: null,
     repos: [],
   };
-
+  
   searchUsers = async (text) => {
     this.setState({ loading: true });
     const res = await axios.get(
@@ -76,6 +76,7 @@ class App extends React.Component {
                 )}
               ></Route>
               <Route exact path="/about" component={About}></Route>
+
               <Route
                 exact
                 path="/user/:login"
