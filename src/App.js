@@ -19,7 +19,7 @@ class App extends React.Component {
     alert: null,
     repos: [],
   };
-  
+
   searchUsers = async (text) => {
     this.setState({ loading: true });
     const res = await axios.get(
@@ -49,7 +49,7 @@ class App extends React.Component {
     this.setState({ alert: { msg, type } });
     setTimeout(() => {
       this.setState({ alert: null });
-    }, 2000);
+    }, 1000);
   };
   render() {
     const { user } = this.state;

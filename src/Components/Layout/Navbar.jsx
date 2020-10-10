@@ -39,7 +39,7 @@ const Navbar = ({ icon, title }) => {
   );
 };
 Navbar.defaultProps = {
-  title: "Geek's 💡 Hub",
+  title: "Geek's Hub",
   icon: "fab fa-github  fa-spin",
 };
 // should give string type

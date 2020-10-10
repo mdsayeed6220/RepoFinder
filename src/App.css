@@ -2,7 +2,7 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #068bf8;
+  --primary-color: #610279;
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -119,8 +119,8 @@ img {
   box-shadow: -18px 7px 18px -7px rgba(77, 77, 77, 0.56);
 }
 .card:hover {
-  background-color: white;
-  box-shadow: -7px 7px 12px -7px rgb(209, 209, 209);
+  background-color: rgb(255, 252, 252);
+  box-shadow: -7px 7px 12px -7px rgb(182, 182, 182);
   cursor: pointer;
 }
 
@@ -379,8 +379,8 @@ table th {
 }
 
 .navbar a:hover {
-  color: black;
-  background-color: #068bf8;
+  color: rgb(189, 189, 189);
+  
 }
 
 .navbar .welcome span {
