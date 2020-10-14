@@ -1,10 +1,23 @@
 import React from "react";
 import "./Style.css";
-
+import myself from "../Images/myself.png";
 const contact = () => {
   return (
     <div>
       <h1 style={{ textAlign: "center" }}>Contact Through Below</h1>
+      <img
+        src={myself}
+        alt=""
+        srcset=""
+        style={{
+          width: "300px",
+          display: "block",
+          marginLeft: "auto",
+          marginRight: "auto",
+          height: "300px",
+        }}
+      />
+
       <div className="middle">
         <a
           className="buttonContact"
@@ -42,7 +55,6 @@ const contact = () => {
         <div></div>
         <div></div>
         <div></div>
-        
       </div>
     </div>
   );
