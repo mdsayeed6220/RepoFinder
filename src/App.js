@@ -44,7 +44,7 @@ class App extends React.Component {
   };
 
   clearUsers = () => this.setState({ users: [], loading: false });
-
+  
   setAlert = (msg, type) => {
     this.setState({ alert: { msg, type } });
     setTimeout(() => {
