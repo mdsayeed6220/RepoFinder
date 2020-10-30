@@ -10,7 +10,6 @@ import Alert from "./Components/Layout/Alert";
 import About from "./Components/Pages/about";
 import contact from "./Components/Contact/contact";
 import Jobs from "./Components/Jobs/Jobs";
-
 class App extends React.Component {
   state = {
     users: [],
@@ -44,7 +43,7 @@ class App extends React.Component {
   };
 
   clearUsers = () => this.setState({ users: [], loading: false });
-  
+
   setAlert = (msg, type) => {
     this.setState({ alert: { msg, type } });
     setTimeout(() => {
@@ -105,5 +104,4 @@ class App extends React.Component {
     );
   }
 }
-
 export default App;

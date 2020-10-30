@@ -120,7 +120,7 @@ img {
 }
 .card:hover {
   background-color: rgb(255, 252, 252);
-  box-shadow: -7px 7px 12px -7px rgb(182, 182, 182);
+  box-shadow: -7px 7px 12px -7px rgb(134, 9, 172);
   cursor: pointer;
 }
 
@@ -366,6 +366,10 @@ table th {
   width: 100%;
   opacity: 0.9;
   margin-bottom: 1rem;
+  box-shadow: -18px 7px 20px 1px rgba(193, 29, 235, 0.56);
+}
+.navbar:hover{
+  box-shadow: -18px 7px 20px 1px rgba(208, 128, 240, 0.56);
 }
 
 .navbar ul {
@@ -380,7 +384,6 @@ table th {
 
 .navbar a:hover {
   color: rgb(189, 189, 189);
-  
 }
 
 .navbar .welcome span {
