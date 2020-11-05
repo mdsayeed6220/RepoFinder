@@ -32,7 +32,6 @@ class App extends React.Component {
     );
     this.setState({ user: res.data, loading: false });
   };
-
   getUserRepos = async (username) => {
     this.setState({ loading: true });
     const res = await axios.get(
