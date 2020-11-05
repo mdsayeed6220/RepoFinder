@@ -1,6 +1,5 @@
 import React from "react";
 import "./Style.css";
-import myself from "../Images/myself.png";
 import myself1 from "../Images/myself1.jpg";
 const Contact = () => {
   return (
