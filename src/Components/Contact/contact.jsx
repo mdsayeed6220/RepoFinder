@@ -1,63 +1,29 @@
 import React from "react";
 import "./Style.css";
 import myself from "../Images/myself.png";
-const contact = () => {
+import myself1 from "../Images/myself1.jpg";
+const Contact = () => {
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>Contact Through Below</h1>
-      <img
-        src={myself}
-        alt=""
-        srcset=""
-        style={{
-          width: "300px",
-          display: "block",
-          marginLeft: "auto",
-          marginRight: "auto",
-          height: "300px",
-        }}
-      />
-
-      <div className="middle">
-        <a
-          className="buttonContact"
-          href="https://www.facebook.com/mohammed.sayeed.1276487/"
-        >
-          <i className="fab fa-facebook-f"></i>
+      <img className="myimage" src={myself1} alt=" " />
+      <div className="contact-section">
+        <a href="https://www.linkedin.com/in/sayeedofficial">
+          <button className="contactbtn" id="ln">
+            <i className="fab fa-linkedin"></i> Linkedin
+          </button>
         </a>
-        <a className="buttonContact" href="https://twitter.com/mdsayeed6220">
-          <i className="fab fa-twitter"></i>
+        <a href="https://www.github.com/sayeedofficial">
+          <button className="contactbtn" id="git">
+            <i className="fab fa-github-square"></i> Github
+          </button>
         </a>
-        <a className="buttonContact" href="https://t.me/devboysayeed">
-          <i className="fab fa-telegram"></i>
+        <a href="https://t.me/devboysayeed">
+          <button className="contactbtn" id="tele">
+            <i className="fab fa-telegram"></i> Telegram
+          </button>
         </a>
-        <a
-          className="buttonContact"
-          href="https://www.github.com/sayeedofficial"
-        >
-          <i className="fab fa-github"></i>
-        </a>
-        <a
-          className="buttonContact"
-          href="https://www.linkedin.com/in/sayeedofficial/"
-        >
-          <i className="fab fa-linkedin-in"></i>
-        </a>
-      </div>
-      <p> </p>
-      <div className="box">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
       </div>
     </div>
   );
 };
-export default contact;
-
+export default Contact;
