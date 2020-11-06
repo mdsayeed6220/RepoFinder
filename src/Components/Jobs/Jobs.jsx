@@ -1,11 +1,13 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 
 const Jobs = () => {
   return (
     <div>
-      <h2 style={{ textAlign: "center" }}>Comming Soon </h2>
+      <a href="https://geekshubjobs.netlify.app/">
+        <Button variant="success">Click Here</Button>
+      </a>
     </div>
   );
 };
-
 export default Jobs;
