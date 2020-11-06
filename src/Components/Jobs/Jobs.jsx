@@ -3,10 +3,16 @@ import { Button } from "react-bootstrap";
 
 const Jobs = () => {
   return (
-    <div>
-      <a href="https://geekshubjobs.netlify.app/">
-        <Button variant="success">Click Here</Button>
-      </a>
+    <div className="text-center">
+      <Button
+        href="https://geekshubjobs.netlify.app/"
+        className="btn-round-lg"
+        variant="success"
+        color="black"
+        block
+      >
+        Click Here
+      </Button>
     </div>
   );
 };
