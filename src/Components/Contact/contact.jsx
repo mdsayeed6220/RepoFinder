@@ -5,6 +5,9 @@ const Contact = () => {
   return (
     <div>
       <img className="myimage" src={myself1} alt=" " />
+      <div className="myname">
+        <h2>Mohammed Sayeed</h2>
+      </div>
       <div className="contact-section">
         <a href="https://www.linkedin.com/in/sayeedofficial">
           <button className="contactbtn" id="ln">
