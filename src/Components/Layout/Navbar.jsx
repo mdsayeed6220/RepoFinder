@@ -17,12 +17,6 @@ const Navbar = ({ icon, title }) => {
             </Link>
           </li>
           <li>
-            <Link to="/jobs">
-              {" "}
-              <i className="fas fa-code"></i> Find Jobs
-            </Link>
-          </li>
-          <li>
             <Link to="/about">
               {" "}
               <i className="fas fa-info-circle"></i> About
